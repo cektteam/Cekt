@@ -3,7 +3,8 @@ package at.jku.ce;
 public class DomainObject {
 
  	private String name;
-
+  public String id = UUID.randomUUID().toString()
+  
 	/**
  	* Default constructor
  	*/
