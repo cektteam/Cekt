@@ -9,7 +9,7 @@ public class DomainObject {
  	* Default constructor
  	*/
 
-	public DomainObject() {
+	public DomainObject(String name, String comment) {
 		super();
 	}
 	
