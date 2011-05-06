@@ -1,6 +1,14 @@
-public String id;
+package at.jku.ce;
 
-public DomainObject(String id) {
-  super();
-  this.id = id;
+public class DomainObject {
+
+	public DomainObject() {
+		super();
+	}
+	
+	public DomainObject(String id) {
+    super();
+    this.id = id;
+  }
+
 }
