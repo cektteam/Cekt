@@ -11,11 +11,11 @@ public class Main {
 		
 		Set<DomainObject> objectSet = new TreeSet<DomainObject>(new DomainObjectComparator());
 
-		objectSet.add(new DomainObject("Helga", "Kommentar Helga"));
-		objectSet.add(new DomainObject("Walter", "Kommentar Walter"));
-		objectSet.add(new DomainObject("Hannah", "Kommentar Hannah"));
-		objectSet.add(new DomainObject("Paul", "Kommentar Paul"));
-		objectSet.add(new DomainObject("Claudia", "Kommentar Claudia"));
+		objectSet.add(DomainFactory.createDomainObject("Helga", "Kommentar Helga"));
+		objectSet.add(DomainFactory.createDomainObject("Walter", "Kommentar Walter"));
+		objectSet.add(DomainFactory.createDomainObject("Hannah", "Kommentar Hannah"));
+		objectSet.add(DomainFactory.createDomainObject("Paul", "Kommentar Paul"));
+		objectSet.add(DomainFactory.createDomainObject("Claudia", "Kommentar Claudia"));
 
 		for (DomainObject domainObject : objectSet) {
 		  LOGGER.debug(domainObject.toString());
