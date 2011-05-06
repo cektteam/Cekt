@@ -2,19 +2,19 @@ package at.jku.ce;
 
 public class DomainObject {
 
- 	private String name;
-	private String uuid = UUID.randomUUID().toString();
-	private String comment;
-	
-	/**
- 	* Default constructor
- 	*/
+  private String name;
+private String uuid = UUID.randomUUID().toString();
+private String comment;
 
-	public DomainObject(String name, String comment) {
-		super();
-	}
-	
-	public DomainObject(String uuid) {
+/**
+* Default constructor
+*/
+
+public DomainObject(String name, String comment) {
+super();
+}
+
+public DomainObject(String uuid) {
     super();
     this.uuid = uuid;
   }
@@ -27,7 +27,7 @@ public class DomainObject {
     return comment;
   }
 
-  public void setComment(String comment) {
+  public void setComment(final String comment) {
     this.comment = comment;
   }
   
@@ -35,7 +35,8 @@ public class DomainObject {
    return name;
   }
 
-  public void setName(String name) {
+  public void setName(final String name) {
    this.name = name;
   }
 }
+
