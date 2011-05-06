@@ -10,11 +10,11 @@ private String comment;
 * Default constructor
 */
 
-public DomainObject(String name, String comment) {
+protected DomainObject(String name, String comment) {
 super();
 }
 
-public DomainObject(String uuid) {
+protected DomainObject(String uuid) {
     super();
     this.uuid = uuid;
   }
