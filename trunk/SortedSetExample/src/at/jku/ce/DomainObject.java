@@ -1,6 +1,12 @@
 package at.jku.ce;
 
 public class DomainObject {
+	/**
+ 	* Default constructor
+ 	*/
+
+  private String name;
+  
 
 	public DomainObject() {
 		super();
